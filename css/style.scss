@@ -124,6 +124,10 @@ main{
                             line-height: 1.5;
                             letter-spacing: .5px;
                             padding: 0 0 .3rem;
+                            i.fas.fa-angle-down {
+                                font-size: 13px;
+                                vertical-align: middle;
+                            }
                         }
                         .hvr-underline-from-left{
                             &::before{

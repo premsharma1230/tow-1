@@ -239,6 +239,11 @@ main header nav .nav-right-item ul li a {
   padding: 0 0 .3rem;
 }
 
+main header nav .nav-right-item ul li a i.fas.fa-angle-down {
+  font-size: 13px;
+  vertical-align: middle;
+}
+
 main header nav .nav-right-item ul li .hvr-underline-from-left::before {
   background: #eee;
   height: 2px;
