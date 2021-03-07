@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tow</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="css/Hover-master/css/hover-min.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+</head>
+<body>
+   <main class="CarList-Wrapper">
+       <header class="navbar" id="navbar">
+             <div class="container">
+                 <nav>
+                     <div class="nav-left-item nav-cmn">
+                         <div class="logo">
+                             <a href="#">
+                                 <img src="image/logo.png" alt="img">
+                             </a>
+                         </div>
+                         <div class="search-bar">
+                             <input type="text" name="searchbar" id="searchbar" placeholder="Try searching for Maruti Cars, Honda city, Tvs Bikes">
+                           <div class="srch-icon">
+                              <svg class="svg1" width="25px" height="25px" viewBox="0 0 1024 1024" data-aut-id="icon" class="" fill-rule="evenodd"><path class="rui-77aaa" d="M448 725.333c-152.917 0-277.333-124.416-277.333-277.333s124.416-277.333 277.333-277.333c152.917 0 277.333 124.416 277.333 277.333s-124.416 277.333-277.333 277.333v0zM884.437 824.107v0.021l-151.915-151.936c48.768-61.781 78.144-139.541 78.144-224.192 0-199.979-162.688-362.667-362.667-362.667s-362.667 162.688-362.667 362.667c0 199.979 162.688 362.667 362.667 362.667 84.629 0 162.411-29.376 224.171-78.144l206.144 206.144h60.352v-60.331l-54.229-54.229z"></path></svg>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="nav-right-item nav-cmn">
+                      <ul>
+                        <li><a href="#" class="hvr-underline-from-left">New <i class="fas fa-angle-down"></i></a></li>
+                        <li><a href="#" class="hvr-underline-from-left">Used <i class="fas fa-angle-down"></i></a></li>
+                        <li><a href="#" class="hvr-underline-from-left">sell <i class="fas fa-angle-down"></i></a></li>
+                        <li><a href="#" class="hvr-underline-from-left">auction</a></li>
+                        <li><a href="#" class="hvr-underline-from-left">blog</a></li>
+                        <li class="Login"><a href="#" class="hvr-bounce-to-top">Login / register</a></li>                    
+                      </ul>
+                    </div>
+                 </nav>
+             </div>
+       </header>
+
+ <!-- car--List -->
+  <div class="Car-List-wrapper Features-Wrapper">
+      <div class="container">
+          <ul class="Top-heading">
+                    <li>Features vehiles</li>
+                    <li> <a href="#">View all</a> </li>
+                </ul>
+        <div class="Feaures-content Car-list-child-wrp">
+            <div class="Feature-heading"> 
+                <ul class="Feature-tab">
+                    <li class="Ft"><b>Sort By :</b></li>
+                    <li class="Ft Featur-active" onclick="openFeature('FeatureList1')">Popularity</li>
+                    <li class="Ft" onclick="openFeature('FeatureList2')">Price</li>
+                    <li class="Ft" onclick="openFeature('FeatureList3')">Mileage</li>
+                </ul>
+            </div>
+            <div class="Feature-item-wrp vehical-item Feature1" id="FeatureList1">
+                <ul class="FItem-wrp slider2 owl-carousel">
+                    <li class="Feature-item1 F-item-cmn">
+                        <figure>
+                            <img src="image/car.png"  alt="img">
+                        </figure>
+                        <figcaption>
+                            <h3>Mercedes-Benz EQS</h3>
+                            <h4>Rs 5 Lack Onwards</h4>
+                           <p>99Bcc | 20kml | Petrol | Diesel</p>
+                        </figcaption>
+                    </li>
+                    <li class="Feature-item2 F-item-cmn">
+                       <figure>
+                           <img src="image/car2.jpg"  alt="img">
+                       </figure>
+                       <figcaption>
+                           <h3>Suv</h3>
+                           <h4>Rs 5 Lack Onwards</h4>
+                           <p>99Bcc | 20kml | Petrol | Diesel</p>
+                       </figcaption>
+                    </li>
+                    <li class="Feature-item3 F-item-cmn">
+                       <figure>
+                           <img src="image/car3.jpg"  alt="img">
+                       </figure>
+                       <figcaption>
+                           <h3>Tata Nexos EV</h3>
+                           <h4>Rs 5 Lack Onwards</h4>
+                           <p>99Bcc | 20kml | Petrol | Diesel</p>
+                       </figcaption>
+                    </li> 
+                </ul>
+            </div>
+            <div class="Feature-item-wrp vehical-item Feature2" id="FeatureList2" style="display: none;">
+               <ul class="FItem-wrp slider2 owl-carousel">
+                   <li class="Feature-item1 F-item-cmn">
+                        <figure>
+                           <img src="image/car2.jpg"  alt="img">
+                       </figure>
+                       <figcaption>
+                           <h3>Suv</h3>
+                           <h4>Rs 5 Lack Onwards</h4>
+                           <p>99Bcc | 20kml | Petrol | Diesel</p>
+                       </figcaption>
+                   </li>
+                   <li class="Feature-item2 F-item-cmn">
+                       <figure>
+                           <img src="image/car.png"  alt="img">
+                       </figure>
+                       <figcaption>
+                           <h3>Mercedes-Benz EQS</h3>
+                           <h4>Rs 5 Lack Onwards</h4>
+                           <p>99Bcc | 20kml | Petrol | Diesel</p>
+                       </figcaption>
+                   </li>
+                   <li class="Feature-item3 F-item-cmn">
+                       <figure>
+                           <img src="image/car3.jpg"  alt="img">
+                       </figure>
+                       <figcaption>
+                           <h3>Tata Nexos EV</h3>
+                           <h4>Rs 5 Lack Onwards</h4>
+                           <p>99Bcc | 20kml | Petrol | Diesel</p>
+                       </figcaption>
+                    </li> 
+               </ul>
+           </div>
+        </div>
+      </div>
+  </div>
+ <!-- end--here -->
+
+   
+ <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="ft1 ft-cmn">
+                <h2>Overview</h2>
+                <ul>
+                    <li><a href="#" class="hvr-underline-from-left">About us</a></li>
+                    <li><a href="#" class="hvr-underline-from-left">FAQ</a></li>
+                    <li><a href="#" class="hvr-underline-from-left">Privacy policy</a></li>
+                    <li><a href="#" class="hvr-underline-from-left">Terms and Condition</a></li>
+                </ul>
+            </div>
+            <div class="ft2 ft-cmn">
+                <ul>
+                    <li> <p>TRADCONWEEL, G-43, 1st
+                        Floor,Sector 3,Noida Uttar Pradesh ,india
+                        -201301
+                    </p></li>
+                    <li><a  href="Tel:8846568984"><i class="fas fa-phone"></i> Phone 8846568984</a></li>
+                </ul>
+            </div>
+            <div class="ft3 ft-cmn">
+                <h2>
+                    Download Mobile App
+                </h2>
+                <ul>
+                    <li><a href="#">
+                       <figure>
+                           <img src="image/appsotore1.png" alt="img">
+                       </figure>
+                    </a></li>
+                    <li><a href="#">
+                       <figure>
+                           <img src="image/appstore2.png" alt="img">
+                       </figure>
+                    </a></li>
+                </ul> 
+                 <h2>Connect with us</h2>
+                <ul class="Social-wrp">
+                    <li><a href="#" title="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a></li>
+                    <li><a href="#" title="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
+                    <li><a href="#" title="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer--end--here -->
+   
+
+   </main>
+
+
+    <!-- script---section -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vanilla-tilt.babel.min.js"></script> 
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- <script>
+        new WOW().init();
+    </script>
+    <script>
+        AOS.init();
+      </script> -->
+</body>
+</html>
