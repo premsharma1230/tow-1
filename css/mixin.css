@@ -1,1 +1,17 @@
-/* No CSS *//*# sourceMappingURL=mixin.css.map */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+  font-family: 'Gotham Pro bold';
+}
+
+p {
+  font-family: 'Gotham Pro Regular';
+}
+
+li {
+  list-style-type: none;
+}
+/*# sourceMappingURL=mixin.css.map */

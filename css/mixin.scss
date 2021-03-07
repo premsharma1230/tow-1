@@ -9,22 +9,73 @@
     width: 90%;
     margin: 0 auto;
 }
-//---color----//
 
-$red : #b5132a;
-$hcolor:#2c3e50;
-$para:#787878;
-$siteColor:#1F4E5F;
-$text2:#F5A91D;
-$border-width: 4px;
-// $border-color: #ffc107;
-$white:#fff;
-$cap:capitalize;
-$none:none;
-$around:space-around;
-$between:space-between;
+//---color----// 
+ 
+$border-width: 4px; 
+$white:#fff; 
 //-----font----//
 
 $heading:'Gotham Pro bold';
 $p:'Gotham Pro Regular';
 $transition: all .3s ease-in-out;
+
+
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1,h2,h3,h4,h5,h6,li{
+    font-family: 'Gotham Pro bold';
+}
+// li{
+//     list-style-type: none;
+// }
+p{
+    font-family: 'Gotham Pro Regular';
+}
+
+ li{
+     list-style-type: none;
+ }
+
+ 
+
+@mixin container {
+    width: 90%;
+    margin: 0 auto;
+}
+ 
+// --------Color-----of------Websites------//
+
+$site-color:#172f55;
+$fff:#ffffff;
+$lex:flex;
+$mid:center;
+$wrp:wrap;
+$Fend:flex-end;
+$between:space-between;
+$around:space-around;
+$inherit:inherit;
+$N-wrp:nowrap;
+$none:none;
+$cap:capitalize;
+$upper:uppercase;
+$end:flex-end;
+$start:flex-start;
+$init:initial;
+$bld:bold;
+$block:block;
+$inline-b:inline-block;
+$blder:bolder;
+$rel:relative;
+$abs:absolute;
+$hide:hidden; 
+$cover:cover;
+$no-rpt:no-repeat;
+$heading:'Gotham Pro bold';
+$paragraph:'Gotham Pro Regular';
+$transition:all .3s ease-in-out;

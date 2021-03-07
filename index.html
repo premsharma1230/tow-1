@@ -4,40 +4,632 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarTow</title>
+    <title>Tow</title>
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="shortcut icon" href="image/fevicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" href="css/Hover-master/css/hover-min.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
 </head>
 <body>
    <main>
-       <header>
+       <header class="navbar" id="navbar">
              <div class="container">
                  <nav>
-                     <div class="nav-left-item">
+                     <div class="nav-left-item nav-cmn">
                          <div class="logo">
                              <a href="#">
                                  <img src="image/logo.png" alt="img">
                              </a>
                          </div>
                          <div class="search-bar">
-                             <input type="text" name="searchbar" id="searchbar" placeholder="">
-                         </div>
+                             <input type="text" name="searchbar" id="searchbar" placeholder="Try searching for Maruti Cars, Honda city, Tvs Bikes">
+                           <div class="srch-icon">
+                              <svg class="svg1" width="25px" height="25px" viewBox="0 0 1024 1024" data-aut-id="icon" class="" fill-rule="evenodd"><path class="rui-77aaa" d="M448 725.333c-152.917 0-277.333-124.416-277.333-277.333s124.416-277.333 277.333-277.333c152.917 0 277.333 124.416 277.333 277.333s-124.416 277.333-277.333 277.333v0zM884.437 824.107v0.021l-151.915-151.936c48.768-61.781 78.144-139.541 78.144-224.192 0-199.979-162.688-362.667-362.667-362.667s-362.667 162.688-362.667 362.667c0 199.979 162.688 362.667 362.667 362.667 84.629 0 162.411-29.376 224.171-78.144l206.144 206.144h60.352v-60.331l-54.229-54.229z"></path></svg>
+                           </div>
+                        </div>
                      </div>
-                     <div class="nav-right-item">
-
-                     </div>
+                     <div class="nav-right-item nav-cmn">
+                      <ul>
+                        <li><a href="#" class="hvr-underline-from-left">New</a></li>
+                        <li><a href="#" class="hvr-underline-from-left">Used</a></li>
+                        <li><a href="#" class="hvr-underline-from-left">sell</a></li>
+                        <li><a href="#" class="hvr-underline-from-left">auction</a></li>
+                        <li><a href="#" class="hvr-underline-from-left">blog</a></li>
+                        <li class="Login"><a href="#" class="hvr-bounce-to-top">Login / register</a></li>                    
+                      </ul>
+                    </div>
                  </nav>
              </div>
        </header>
+
+       <!-- banner -->
+     <section class="Banner_Wrapper">
+         <div class="slider-child slider1 owl-carousel">
+            <div class="banner-fig-wrp">
+                <figure><img src="image/banner1.jpg" alt="img"></figure>
+                </div>
+            <div class="banner-fig-wrp">
+                <figure><img src="image/banner2.jpg" alt="img"></figure>
+            </div>
+            <div class="banner-fig-wrp">
+                <figure><img src="image/banner3.jpg" alt="img"></figure>
+            </div>
+        </div>
+     </section>
+       <!-- banner--end -->
+       <section class="Main-form-wrp">
+           <div class="container">
+            <div class="child-content">
+            <div class="Form-wrp">
+                <div class="container">
+                    <div class="frm-heading">
+                        <h2>Find your right vehical</h2>
+                    </div>
+                    <div class="Fbtn-tab">
+                        <ul>
+                            <li class="btn1 btn-cmn active-btn" onclick="openList('List1')">New vehical</li>
+                            <li class="btn2 btn-cmn" onclick="openList('List2')">Used vehical</li>
+                        </ul>
+                    </div>
+                    <div class="Form-wrp1 Form_wrp-cmn"  id="List1">
+                        <form action="#" method="">
+                            <div class="Frm1 Frm-cmn">
+                                <label for="#" class="lbl1">
+                                    <!-- <span class="checkbox"><b class="b1"></b></span> -->
+                                        <input type="checkbox" name="checkbox1" id="checkbox1">
+                                By Budget</label>
+                                <label for="#" class="lbl2">
+                                    <!-- <span class="checkbox"><b class="b1"></b></span>  -->
+                                    <input type="checkbox" name="checkbox2" id="checkbox2">
+                                    By Brand</label>
+                                    <label for="#" class="lbl3"> 
+                                        <!-- <span class="checkbox"><b class="b1"></b></span> -->
+                                        <input type="checkbox" name="checkbox3" id="checkbox3">
+                                        By Model</label>
+                            </div>
+                            <div class="Frm2 Frm-cmn">
+                                <input type="text" name="text1" id="name1" placeholder="" autocapitalize="off">
+                            </div>
+                            <div class="Frm3 Frm-cmn">
+                                <input type="text" name="text1" id="name2" placeholder="" autocapitalize="off">
+                            </div>
+                            <div class="Frm4 Frm-cmn">
+                                <input type="Submit" name="Submit" id="Submit" value="Submit">
+                            </div>
+                        </form>
+                    </div> 
+                    <div class="Form-wrp2 Form_wrp-cmn" id="List2" style="display: none;">
+                        <form action="#" method="">
+                            <div class="Frm1 Frm-cmn">
+                                <label for="#" class="lbl1">
+                                    <!-- <span class="checkbox"><b class="b1"></b></span> -->
+                                        <input type="checkbox" name="checkbox1" id="checkbox1">
+                                By Budget</label>
+                                <label for="#" class="lbl2">
+                                    <!-- <span class="checkbox"><b class="b1"></b></span>  -->
+                                    <input type="checkbox" name="checkbox2" id="checkbox2">
+                                    By Brand</label>
+                                    <label for="#" class="lbl3"> 
+                                        <!-- <span class="checkbox"><b class="b1"></b></span> -->
+                                        <input type="checkbox" name="checkbox3" id="checkbox3">
+                                        By Model</label>
+                            </div>
+                            <div class="Frm2 Frm-cmn">
+                                <input type="text" name="text1" id="name1" placeholder="Used vehical" autocapitalize="off">
+                            </div>
+                            <div class="Frm3 Frm-cmn">
+                                <input type="text" name="text1" id="name2" placeholder="Used vehical" autocapitalize="off">
+                            </div>
+                            <div class="Frm4 Frm-cmn">
+                                <input type="Submit" name="Submit" id="Submit" value="Submit">
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+            </div> 
+            <div class="ads-section">
+                <div class="addbar">
+                    <h2>Ads bar</h2>
+                </div>
+            </div>
+            </div>
+           </div>
+       </section>
+
+       <section class="Features-Wrapper">
+            <div class="container">
+                 <div class="Feaures-content">
+                     <div class="Feature-heading">
+                         <ul class="Top-heading">
+                             <li>Features vehiles</li>
+                             <li> <a href="#">View all</a> </li>
+                         </ul> 
+                         <ul class="Feature-tab">
+                             <li class="Ft Featur-active" onclick="openFeature('FeatureList1')">Featured</li>
+                             <li class="Ft" onclick="openFeature('FeatureList2')">Latest</li>
+                         </ul>
+                     </div>
+                     <div class="Feature-item-wrp vehical-item Feature1" id="FeatureList1">
+                         <ul class="FItem-wrp slider2 owl-carousel">
+                             <li class="Feature-item1 F-item-cmn">
+                                 <figure>
+                                     <img src="image/car.png"  alt="img">
+                                 </figure>
+                                 <figcaption>
+                                     <h3>Mercedes-Benz EQS</h3>
+                                     <p>Rs 5.79 - 10.45 Lakh*</p>
+                                 </figcaption>
+                             </li>
+                             <li class="Feature-item2 F-item-cmn">
+                                <figure>
+                                    <img src="image/car2.jpg"  alt="img">
+                                </figure>
+                                <figcaption>
+                                    <h3>Suv</h3>
+                                    <p>Rs 6.79 - 13.21 Lakh*</p>
+                                </figcaption>
+                             </li>
+                             <li class="Feature-item3 F-item-cmn">
+                                <figure>
+                                    <img src="image/car3.jpg"  alt="img">
+                                </figure>
+                                <figcaption>
+                                    <h3>Tata Nexos EV</h3>
+                                    <p>Rs 7.59 - 16.15 Lakh*</p>
+                                </figcaption>
+                             </li>
+                             <li class="Feature-item4 F-item-cmn">
+                                <figure>
+                                    <img src="image/car4.jpg"  alt="img">
+                                </figure>
+                                <figcaption>
+                                    <h3>Swift Dzire</h3>
+                                    <p>Rs 5.79 - 10.45 Lakh*</p>
+                                </figcaption>
+                             </li> 
+                             <li class="Feature-item5 F-item-cmn">
+                                <figure>
+                                    <img src="image/car3.jpg"  alt="img">
+                                </figure>
+                                <figcaption>
+                                    <h3>Tata Nexos EV</h3>
+                                    <p>Rs 7.59 - 16.15 Lakh*</p>
+                                </figcaption>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="Feature-item-wrp vehical-item Feature2" id="FeatureList2" style="display: none;">
+                        <ul class="FItem-wrp slider2 owl-carousel">
+                            <li class="Feature-item1 F-item-cmn">
+                                 <figure>
+                                    <img src="image/car2.jpg"  alt="img">
+                                </figure>
+                                <figcaption>
+                                    <h3>Suv</h3>
+                                    <p>Rs 6.79 - 13.21 Lakh*</p>
+                                </figcaption>
+                            </li>
+                            <li class="Feature-item2 F-item-cmn">
+                                <figure>
+                                    <img src="image/car.png"  alt="img">
+                                </figure>
+                                <figcaption>
+                                    <h3>Mercedes-Benz EQS</h3>
+                                    <p>Rs 5.79 - 10.45 Lakh*</p>
+                                </figcaption>
+                            </li>
+                            <li class="Feature-item3 F-item-cmn">
+                                <figure>
+                                    <img src="image/car3.jpg"  alt="img">
+                                </figure>
+                                <figcaption>
+                                    <h3>Tata Nexos EV</h3>
+                                    <p>Rs 7.59 - 16.15 Lakh*</p>
+                                </figcaption>
+                             </li>
+                            <li class="Feature-item4 F-item-cmn">
+                               <figure>
+                                   <img src="image/car.png"  alt="img">
+                               </figure>
+                               <figcaption>
+                                   <h3>Mercedes-Benz EQS</h3>
+                                   <p>Rs 5.79 - 10.45 Lakh*</p>
+                               </figcaption>
+                            </li> 
+                            <li class="Feature-item5 F-item-cmn">
+                                <figure>
+                                    <img src="image/car3.jpg"  alt="img">
+                                </figure>
+                                <figcaption>
+                                    <h3>Tata Nexos EV</h3>
+                                    <p>Rs 7.59 - 16.15 Lakh*</p>
+                                </figcaption>
+                             </li>
+                        </ul>
+                    </div>
+                 </div>
+                 <!-- Popular ---car -->
+                 <div class="Feaures-content">
+                    <div class="Feature-heading">
+                        <ul class="Top-heading">
+                            <li>Popular Cars</li>
+                            <li> <a href="#">View all</a> </li>
+                        </ul> 
+                        <ul class="Feature-tab">
+                            <li class="Ft Featur-active" onclick="openPopFeature('Pop-FeatureList1')">New</li>
+                            <li class="Ft" onclick="openPopFeature('Pop-FeatureList2')">Used</li>
+                        </ul>
+                    </div>
+                    <div class="Feature-item-wrp Popular-item Feature1" id="Pop-FeatureList1">
+                        <ul class="FItem-wrp slider2 owl-carousel">
+                            <li class="Feature-item1 F-item-cmn">
+                                <figure>
+                                    <img src="image/car5.jpg"  alt="img">
+                                </figure>
+                                <figcaption>
+                                    <h3>BMW i8</h3>
+                                    <p>Rs 80.79Lakh - 5.5 Cr*</p>
+                                </figcaption>
+                            </li>
+                            <li class="Feature-item2 F-item-cmn">
+                               <figure>
+                                   <img src="image/car6.jpg"  alt="img">
+                               </figure>
+                               <figcaption>
+                                   <h3>Volkswagen Polo GTI R5</h3>
+                                   <p>Rs 90 Lakh - 13.21 Cr*</p>
+                               </figcaption>
+                            </li>
+                            <li class="Feature-item3 F-item-cmn">
+                               <figure>
+                                   <img src="image/car7.jpg"  alt="img">
+                               </figure>
+                               <figcaption>
+                                   <h3>Marussia B2 MK959 </h3>
+                                   <p>Rs 80.79 Lakh - 16.15 Cr*</p>
+                               </figcaption>
+                            </li>
+                            <li class="Feature-item4 F-item-cmn">
+                               <figure>
+                                   <img src="image/car8.jpg"  alt="img">
+                               </figure>
+                               <figcaption>
+                                   <h3>KIA Seltos</h3>
+                                   <p>Rs 13.79 - 30.45 Lakh*</p>
+                               </figcaption>
+                            </li> 
+                            <li class="Feature-item5 F-item-cmn">
+                               <figure>
+                                   <img src="image/car3.jpg"  alt="img">
+                               </figure>
+                               <figcaption>
+                                   <h3>Tata Nexos EV</h3>
+                                   <p>Rs 7.59 - 16.15 Lakh*</p>
+                               </figcaption>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Feature-item-wrp Popular-item Feature2" id="Pop-FeatureList2" style="display: none;">
+                       <ul class="FItem-wrp slider2 owl-carousel">
+                           <li class="Feature-item1 F-item-cmn">
+                                <figure>
+                                   <img src="image/car2.jpg"  alt="img">
+                               </figure>
+                               <figcaption>
+                                   <h3>Suv</h3>
+                                   <p>Rs 6.79 - 13.21 Lakh*</p>
+                               </figcaption>
+                           </li>
+                           <li class="Feature-item2 F-item-cmn">
+                                <figure>
+                                    <img src="image/car8.jpg"  alt="img">
+                                </figure>
+                                <figcaption>
+                                    <h3>KIA Seltos</h3>
+                                    <p>Rs 13.79 - 30.45 Lakh*</p>
+                                </figcaption>
+                           </li>
+                           <li class="Feature-item3 F-item-cmn">
+                               <figure>
+                                   <img src="image/car3.jpg"  alt="img">
+                               </figure>
+                               <figcaption>
+                                   <h3>Tata Nexos EV</h3>
+                                   <p>Rs 7.59 - 16.15 Lakh*</p>
+                               </figcaption>
+                            </li>
+                           <li class="Feature-item4 F-item-cmn">
+                              <figure>
+                                  <img src="image/car.png"  alt="img">
+                              </figure>
+                              <figcaption>
+                                  <h3>Mercedes-Benz EQS</h3>
+                                  <p>Rs 5.79 - 10.45 Lakh*</p>
+                              </figcaption>
+                           </li> 
+                           <li class="Feature-item5 F-item-cmn">
+                               <figure>
+                                   <img src="image/car3.jpg"  alt="img">
+                               </figure>
+                               <figcaption>
+                                   <h3>Tata Nexos EV</h3>
+                                   <p>Rs 7.59 - 16.15 Lakh*</p>
+                               </figcaption>
+                            </li>
+                       </ul>
+                   </div>
+                </div>
+                 <!-- end---here--popular---car -->
+            <!-- Popular ---Bike -->
+                    <div class="Feaures-content">
+                        <div class="Feature-heading">
+                            <ul class="Top-heading">
+                                <li>Popular Bikes</li>
+                                <li> <a href="#">View all</a> </li>
+                            </ul> 
+                            <ul class="Feature-tab">
+                                <li class="Ft Featur-active" onclick="openBikeItem('Bike-item1')">New</li>
+                                <li class="Ft" onclick="openBikeItem('Bike-item2')">Used</li>
+                            </ul>
+                        </div>
+                        <div class="Feature-item-wrp Bike-item Feature1" id="Bike-item1">
+                            <ul class="FItem-wrp slider2 owl-carousel">
+                                <li class="Feature-item1 F-item-cmn">
+                                    <figure>
+                                        <img src="image/bike1.jpg"  alt="img">
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Royal Enfield Classic 350</h3>
+                                        <p>Rs 80.79Lakh - 5.5 Cr*</p>
+                                    </figcaption>
+                                </li>
+                                <li class="Feature-item2 F-item-cmn">
+                                   <figure>
+                                       <img src="image/bike2.jpg"  alt="img">
+                                   </figure>
+                                   <figcaption>
+                                       <h3>BMW S1000RRb</h3>
+                                       <p>Rs 48 Lakh - 1.21 Cr*</p>
+                                   </figcaption>
+                                </li>
+                                <li class="Feature-item3 F-item-cmn">
+                                   <figure>
+                                       <img src="image/bike3.jpg"  alt="img">
+                                   </figure>
+                                   <figcaption>
+                                       <h3>KTM A3 </h3>
+                                       <p>Rs 30.79 Lakh - 90.15 Cr*</p>
+                                   </figcaption>
+                                </li>
+                                <li class="Feature-item4 F-item-cmn">
+                                   <figure>
+                                       <img src="image/bike4.jpg"  alt="img">
+                                   </figure>
+                                   <figcaption>
+                                       <h3>Harley Davidson</h3>
+                                       <p>Rs 20.79 - 10.45 Cr*</p>
+                                   </figcaption>
+                                </li> 
+                                <li class="Feature-item5 F-item-cmn">
+                                   <figure>
+                                       <img src="image/bike5.jpg"  alt="img">
+                                   </figure>
+                                   <figcaption>
+                                       <h3>Yamaha R15</h3>
+                                       <p>Rs 5.59 - 16.15 Lakh*</p>
+                                   </figcaption>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Feature-item-wrp Bike-item Feature2" id="Bike-item2" style="display: none;">
+                           <ul class="FItem-wrp slider2 owl-carousel">
+                               <li class="Feature-item1 F-item-cmn">
+                                    <figure>
+                                       <img src="image/bike6.jpg"  alt="img">
+                                   </figure>
+                                   <figcaption>
+                                       <h3>Honda CBR250RR</h3>
+                                       <p>Rs 6.79 - 13.21 Lakh*</p>
+                                   </figcaption>
+                               </li>
+                               <li class="Feature-item2 F-item-cmn">
+                                    <figure>
+                                        <img src="image/bike7.jpg"  alt="img">
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Kawasaki Ninja 1000SX</h3>
+                                        <p>Rs 20.79 - 30.45 Lakh*</p>
+                                    </figcaption>
+                               </li>
+                               <li class="Feature-item3 F-item-cmn">
+                                   <figure>
+                                       <img src="image/bike8.png"  alt="img">
+                                   </figure>
+                                   <figcaption>
+                                       <h3>Pulsar NS200</h3>
+                                       <p>Rs 2.59 - 16.15 Lakh*</p>
+                                   </figcaption>
+                                </li>
+                               <li class="Feature-item4 F-item-cmn">
+                                  <figure>
+                                      <img src="image/bike9.png"  alt="img">
+                                  </figure>
+                                  <figcaption>
+                                      <h3>suzuki intruder</h3>
+                                      <p>Rs 5.79 - 10.45 Lakh*</p>
+                                  </figcaption>
+                               </li> 
+                               <li class="Feature-item5 F-item-cmn">
+                                   <figure>
+                                       <img src="image/bike10.jpg"  alt="img">
+                                   </figure>
+                                   <figcaption>
+                                       <h3>hero splendor</h3>
+                                       <p>Rs 40.90 - 1.5 Lakh*</p>
+                                   </figcaption>
+                                </li>
+                           </ul>
+                       </div>
+                    </div>
+            <!-- end---here--popular---Bike -->
+              <!-- Brands --- -->
+              <div class="Feaures-content">
+                <div class="Feature-heading">
+                    <ul class="Top-heading">
+                        <li>Top Brands</li>
+                        <li> <a href="#">View all</a> </li>
+                    </ul>  
+                </div>
+                <div class="Feature-item-wrp Brand-wrp Feature1" id="Bike-item1">
+                    <ul class="FItem-wrp slider2 owl-carousel">
+                        <li class="Feature-item1 F-item-cmn">
+                            <figure>
+                                <img src="image/brand.png"  alt="img">
+                            </figure>
+                            <figcaption>
+                                <h3>Ford</h3> 
+                            </figcaption>
+                        </li>
+                        <li class="Feature-item2 F-item-cmn">
+                           <figure>
+                               <img src="image/brand2.png"  alt="img">
+                           </figure>
+                           <figcaption>
+                               <h3>Honda</h3> 
+                           </figcaption>
+                        </li>
+                        <li class="Feature-item3 F-item-cmn">
+                           <figure>
+                               <img src="image/brand3.png"  alt="img">
+                           </figure>
+                           <figcaption>
+                               <h3>Hyundai </h3> 
+                           </figcaption>
+                        </li>
+                        <li class="Feature-item4 F-item-cmn">
+                           <figure>
+                               <img src="image/brand4.png"  alt="img">
+                           </figure>
+                           <figcaption>
+                               <h3>Suzuki</h3> 
+                           </figcaption>
+                        </li> 
+                        <li class="Feature-item5 F-item-cmn">
+                           <figure>
+                               <img src="image/brand5.png"  alt="img">
+                           </figure>
+                           <figcaption>
+                               <h3>Renault</h3> 
+                           </figcaption>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <!-- end---here--brands---Bike -->
+              <!-- Brands --- -->
+              <div class="Feaures-content">
+                <div class="Feature-heading">
+                    <ul class="Top-heading">
+                        <li>Used Vehicles in India</li> 
+                    </ul>  
+                </div>
+                <div class="Feature-item-wrp Brand-wrp Feature1" id="Bike-item1">
+                    <ul class="FItem-wrp slider3 owl-carousel">
+                        <li class="Feature-item1 F-item-cmn">
+                            <figure>
+                                <img src="image/city.png"  alt="img">
+                            </figure>
+                            <figcaption>
+                                <h3>Lucknow</h3> 
+                            </figcaption>
+                        </li>
+                        <li class="Feature-item2 F-item-cmn">
+                           <figure>
+                               <img src="image/city2.png"  alt="img">
+                           </figure>
+                           <figcaption>
+                               <h3>Jaipur</h3> 
+                           </figcaption>
+                        </li>
+                        <li class="Feature-item3 F-item-cmn">
+                           <figure>
+                               <img src="image/city3.png"  alt="img">
+                           </figure>
+                           <figcaption>
+                               <h3>Kolkata </h3> 
+                           </figcaption>
+                        </li>
+                        <li class="Feature-item4 F-item-cmn">
+                           <figure>
+                               <img src="image/city4.png"  alt="img">
+                           </figure>
+                           <figcaption>
+                               <h3>Delhi</h3> 
+                           </figcaption>
+                        </li> 
+                        <li class="Feature-item5 F-item-cmn">
+                           <figure>
+                               <img src="image/city5.png"  alt="img">
+                           </figure>
+                           <figcaption>
+                               <h3>Hydrabad</h3> 
+                           </figcaption>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <!-- end---here--brands---Bike -->
+            </div>
+       </section>
    </main>
 
-
+<!-- footer -->
+ <footer>
+     <div class="container">
+         <div class="footer-content">
+             <div class="ft1 ft-cmn">
+                 <h2>Overview</h2>
+                 <ul>
+                     <li><a href="#">About us</a></li>
+                     <li><a href="#">Faq</a></li>
+                     <li><a href="#">Privacy policy</a></li>
+                     <li><a href="#">Terms and Condition</a></li>
+                 </ul>
+             </div>
+             <div class="ft2 ft-cmn">
+                 <ul>
+                     <li> <p>TRADCONWEEL, G-43, 1st
+                         Floor,Sector 3,Noida Uttar Pradesh ,india
+                         -201301
+                     </p></li>
+                     <li><a  href="Tel:8846568984">Phone 8846568984</a></li>
+                 </ul>
+             </div>
+             <div class="ft3 ft-cmn">
+                 <h2>
+                     Download Mobile App
+                 </h2>
+                 <ul>
+                     <li><a href="#">
+                        <figure>
+                            <img src="" alt="img">
+                        </figure>
+                     </a></li>
+                     <li><a href="#">
+                        <figure>
+                            <img src="" alt="img">
+                        </figure>
+                     </a></li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+ </footer>
+<!-- footer--end--here -->
     
 
     <!-- script---section -->
@@ -46,11 +638,11 @@
     <script src="js/vanilla-tilt.babel.min.js"></script> 
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script>
+    <!-- <script>
         new WOW().init();
     </script>
     <script>
         AOS.init();
-      </script>
+      </script> -->
 </body>
 </html>
