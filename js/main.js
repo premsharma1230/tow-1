@@ -29,7 +29,7 @@ $(document).ready(function(){
   $('.slider1').owlCarousel({
     loop: false,
     margin: 0,
-    // autoplay: true,
+    autoplay: true,
     // nav: true,
     autoplayTimeout: 4000,
     smartSpeed: 1500,

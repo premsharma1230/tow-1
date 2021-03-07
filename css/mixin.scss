@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6,li{
 // li{
 //     list-style-type: none;
 // }
-p{
+p,li{
     font-family: 'Gotham Pro Regular';
 }
 
@@ -42,7 +42,12 @@ p{
      list-style-type: none;
  }
 
- 
+ .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;z-index: 20;
+    width: 100%;
+}
 
 @mixin container {
     width: 90%;

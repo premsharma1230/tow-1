@@ -508,5 +508,98 @@ main{
      }
  }
 //Features---section----end--here
-
+  footer{
+      width: 100%;
+      background: #172f55;
+      padding: 2rem 0;
+      .footer-content{
+          width: 100%;
+          @include flex;
+          justify-content: $between;
+          align-items: inherit;
+          .ft2{
+              ul{
+                padding: 0rem 0 0!important;
+              }
+          }
+          .ft-cmn{
+              width: 32%;
+              h2{
+                  font-size:1.3em;
+                  text-transform: $cap;
+                  word-spacing: 1px;
+                  letter-spacing: .5px;
+                  line-height: 1.5;
+                  color: #fff; 
+                  text-transform: $upper;
+              }
+              ul{
+                  padding: 1rem 0 0;
+                  li{
+                      padding: 0rem 0 1rem;
+                      color: #fff;
+                      a{
+                        i.fas.fa-phone {
+                            transform: rotate(  108deg
+                        );
+                         }
+                          text-transform: $cap;
+                          font-size: 1em;
+                          word-spacing: 1px;
+                          letter-spacing: .5px;
+                          color: #fff;
+                          text-decoration: none;
+                          transition: $transition;
+                          padding: 0 0 .4rem;
+                          &:hover{
+                            transition: $transition;
+                            opacity: .88;
+                            transform: scale(.95);
+                          }
+                      }
+                      .hvr-underline-from-left{
+                          &:before{
+                              height: 2px;
+                              background: #fff;
+                          }
+                      }
+                  }
+                  figure{
+                      img{
+                        max-width: 36%;
+                        transition: $transition;
+                        &:hover{
+                            transform: scale(1.1);
+                            transition: $transition;
+                        }
+                      }
+                  }
+              }
+              .Social-wrp{
+                  @include flex;
+                  justify-content:flex-start;
+                  padding: 1rem 0 0;
+                  li{
+                      a{
+                        //   padding: .7rem .7rem;
+                          margin: 0 .9rem 0 0;
+                        //   display: inline-block;
+                          border-radius: 50%;
+                          background: #eee;
+                          color:#172f55;
+                          width: 43px;
+                          height: 43px;
+                          @include flex;
+                          padding: 0 0 0 0!important;
+                          border: 1px solid #172f55;
+                          box-shadow: 0 0 1px 2px #fff;
+                          i{
+                              font-size: 1.1em;
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
 }

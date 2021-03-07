@@ -47,12 +47,20 @@ h1, h2, h3, h4, h5, h6, li {
   font-family: 'Gotham Pro bold';
 }
 
-p {
+p, li {
   font-family: 'Gotham Pro Regular';
 }
 
 li {
   list-style-type: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
 }
 
 .container {
@@ -750,5 +758,148 @@ main .Features-Wrapper .Feaures-content .Brand-wrp figure img {
 
 main .Features-Wrapper .Feaures-content .Brand-wrp .F-item-cmn {
   text-align: center;
+}
+
+main footer {
+  width: 100%;
+  background: #172f55;
+  padding: 2rem 0;
+}
+
+main footer .footer-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+}
+
+main footer .footer-content .ft2 ul {
+  padding: 0rem 0 0 !important;
+}
+
+main footer .footer-content .ft-cmn {
+  width: 32%;
+}
+
+main footer .footer-content .ft-cmn h2 {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  letter-spacing: .5px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+main footer .footer-content .ft-cmn ul {
+  padding: 1rem 0 0;
+}
+
+main footer .footer-content .ft-cmn ul li {
+  padding: 0rem 0 1rem;
+  color: #fff;
+}
+
+main footer .footer-content .ft-cmn ul li a {
+  text-transform: capitalize;
+  font-size: 1em;
+  word-spacing: 1px;
+  letter-spacing: .5px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 0 0 .4rem;
+}
+
+main footer .footer-content .ft-cmn ul li a i.fas.fa-phone {
+  -webkit-transform: rotate(108deg);
+          transform: rotate(108deg);
+}
+
+main footer .footer-content .ft-cmn ul li a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: .88;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+main footer .footer-content .ft-cmn ul li .hvr-underline-from-left:before {
+  height: 2px;
+  background: #fff;
+}
+
+main footer .footer-content .ft-cmn ul figure img {
+  max-width: 36%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main footer .footer-content .ft-cmn ul figure img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main footer .footer-content .ft-cmn .Social-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1rem 0 0;
+}
+
+main footer .footer-content .ft-cmn .Social-wrp li a {
+  margin: 0 .9rem 0 0;
+  border-radius: 50%;
+  background: #eee;
+  color: #172f55;
+  width: 43px;
+  height: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 0 0 0 !important;
+  border: 1px solid #172f55;
+  -webkit-box-shadow: 0 0 1px 2px #fff;
+          box-shadow: 0 0 1px 2px #fff;
+}
+
+main footer .footer-content .ft-cmn .Social-wrp li a i {
+  font-size: 1.1em;
 }
 /*# sourceMappingURL=style.css.map */

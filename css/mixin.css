@@ -7,11 +7,19 @@ h1, h2, h3, h4, h5, h6, li {
   font-family: 'Gotham Pro bold';
 }
 
-p {
+p, li {
   font-family: 'Gotham Pro Regular';
 }
 
 li {
   list-style-type: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
 }
 /*# sourceMappingURL=mixin.css.map */
