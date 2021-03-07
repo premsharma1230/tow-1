@@ -146,7 +146,7 @@ window.onscroll = function() {
     matrixFunction()  
 };
 function matrixFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
         navbar.classList.add("sticky")
     } else { 
         navbar.classList.remove("sticky");
