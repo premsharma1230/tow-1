@@ -211,43 +211,61 @@ main header nav .nav-left-item .search-bar .srch-icon svg {
   transition: all 0.3s ease-in-out;
 }
 
-main header nav .nav-right-item .nav-item1 {
+main header nav .nav-right-item .Nv-item-wrp {
   position: relative;
 }
 
-main header nav .nav-right-item .nav-item1:hover .drop-down {
-  -webkit-transform: scale(1) rotateY(0deg);
-          transform: scale(1) rotateY(0deg);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+main header nav .nav-right-item .Nv-item-wrp:hover .drop-down {
+  -webkit-transition: all 0.3s cubic-bezier(0, 0.74, 0.78, 0.41);
+  transition: all 0.3s cubic-bezier(0, 0.74, 0.78, 0.41);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
-main header nav .nav-right-item .nav-item1 .drop-down {
+main header nav .nav-right-item .Nv-item-wrp .drop-down {
   position: absolute;
-  -webkit-transform: scale(0) rotateY(270deg);
-          transform: scale(0) rotateY(270deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 200px;
-  top: 42px;
-  left: -75px;
   z-index: 5;
-  text-align: center;
+  top: 54px;
+  left: -26px;
   background: #172f55;
 }
 
-main header nav .nav-right-item .nav-item1 .drop-down ul {
+main header nav .nav-right-item .Nv-item-wrp .drop-down ul {
   display: block !important;
 }
 
-main header nav .nav-right-item .nav-item1 .drop-down ul li {
+main header nav .nav-right-item .Nv-item-wrp .drop-down ul li {
+  color: #fff;
   display: block !important;
-  padding: .7rem .7rem;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #eeeeee45;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-main header nav .nav-right-item .nav-item1 .drop-down ul li a {
+main header nav .nav-right-item .Nv-item-wrp .drop-down ul li:hover {
+  background: rgba(0, 0, 0, 0.383);
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding-left: 1.5rem;
+}
+
+main header nav .nav-right-item .Nv-item-wrp .drop-down ul li a {
   text-decoration: none;
   font-size: 1em;
+  width: 100%;
+  display: inline-block;
+  word-spacing: 1px;
 }
 
 main header nav .nav-right-item ul {
@@ -1340,5 +1358,13 @@ main footer .footer-content .ft-cmn .Social-wrp li a i {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: .80;
+}
+
+.BikeList-Wrapper {
+  width: 100%;
+}
+
+.Commercial-Wrapper {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
