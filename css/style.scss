@@ -111,6 +111,41 @@ main{
                 }
             }
             .nav-right-item{
+                .nav-item1{
+                    position: relative;
+                    &:hover{
+                        .drop-down{
+                            transform: scale(1)rotateY(0deg);
+                            transition: $transition;
+                            li{
+
+                            }
+                        }
+                    }
+                    .drop-down {
+                        position: absolute;
+                        transform: scale(0)rotateY(270deg);
+                        transition: $transition;
+                        width: 200px;
+                        // height: 300px;
+                        top: 42px;
+                        // left: 0;
+                        left: -75px;
+                        z-index: 5;text-align: center;
+                        background: #172f55;
+                        ul {
+                            display: block!important;
+                            li {
+                                display: block!important;
+                                padding: .7rem .7rem;
+                                a{
+                                    text-decoration: none;
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+                }
                 ul{
                     @include flex;
                     justify-content:$between;
@@ -369,11 +404,20 @@ main{
             .ads-section {
                 text-align: center;
                 width: 63%;
-                border: 1px solid #c5c5c5;
-                padding: 2rem;
+                // border: 1px solid #c5c5c5;
+                // padding: 2rem;
                 right: 0;
                 margin: 0 0 0 auto;
                 border-radius: 5px;
+                overflow: hidden;
+                .addbar{
+                    figure{
+                        img{
+                            cursor: pointer;
+                            max-width: 100%;
+                        }
+                    }
+                }
             }
         }
         
@@ -521,6 +565,10 @@ main{
           @include flex;
           justify-content: $between;
           align-items: inherit;
+          .ft3{
+            a{width: 38%;
+                object-fit: cover;}
+        }
           .ft2{
               ul{
                 padding: 0rem 0 0!important;
@@ -570,7 +618,7 @@ main{
                   }
                   figure{
                       img{
-                        max-width: 36%;
+                        max-width: 100%;// 36%;
                         transition: $transition;
                         &:hover{
                             transform: scale(1.1);
@@ -579,6 +627,7 @@ main{
                       }
                   }
               }
+             
               .Social-wrp{
                   @include flex;
                   justify-content:flex-start;
@@ -611,9 +660,299 @@ main{
 // ------Car--list---page---//
 .CarList-Wrapper{
     .Car-List-wrapper{
-        .Car-list-child-wrp{
-            
+        .Top-heading{
+            li{
+                font-size: 1.5em;
+                color: #000;
+                text-transform: $cap;
+                word-spacing: 1px;
+                letter-spacing: .4px;
+                font-family: $heading;
+            }
         }
+        .Car-list-child-wrp{
+            margin: 1.4rem 0 2rem!important;
+            padding: 0 0rem 0rem!important;
+            .Feature-tab{
+                padding: 1rem 1.4rem 0rem;
+                border-bottom: 1px solid #99999978;
+                li{
+                    color: #172f55!important;
+                    b{
+                        font-weight: bold;
+                    }
+                }
+                .Featur-active{
+                    font-weight: bold;
+                    color: #000!important;
+                }
+            }
+           .Car-list-Content{
+               @include flex;
+               justify-content: $between;
+               align-items: inherit!important;
+               .FItem-wrp{
+                   li{
+                       width: 32%;
+                       padding: .5rem;
+                       border: 1px solid #99999978;
+                       border-radius: 5px;
+                       margin: .5rem 0;
+                   }
+               }
+               .car-left{
+                   width: 73%; 
+                //    padding: 0 .5rem 0;
+                   border-right: 1px solid #99999978;
+                   .Feature-tab  {
+                        li{
+                            margin: 0rem 1.6rem 0 0;
+                            padding: 0rem 0 .5rem;
+                        }
+                    }
+                    .Feature-item-wrp{
+                        padding: 2rem 1.5rem 1rem!important;
+                    }
+                   .F-item-cmn{
+                       position: relative;
+                       .heart-wrp{
+                           position: absolute;
+                           right: 10px;
+                           top: 10px;
+                           z-index: 21;
+                           .blank-heart{
+                               i{
+                                color: red;
+                                cursor: pointer;
+                                font-size:1.2em;
+                               }
+                           }
+                           .Fill-heart{ 
+                            display: none;
+                               i{
+                                font-size:1.2em;
+                                color: red;
+                                cursor: pointer; 
+                               }
+                           }
+                       }
+                       figcaption{
+                           text-align: center!important;
+                           h4{
+                               font-size: 1.1em;
+                               padding: .3rem 0;
+                               word-spacing: 1px;
+                               text-transform: $cap;
+                           }
+                       }
+                   }
+               }
+               .car-right{
+                   width: 26%; 
+                //    height: 100vh;
+                   padding: .5rem;
+                   .right-top-heading{
+                       h2{
+                           font-size:1.6em;
+                           text-transform: $cap;
+                           line-height: 1.5;
+                           word-spacing: 1px;
+                           letter-spacing: .4px;
+                           padding: .5rem 0;
+                       }
+                   }
+                   .collapse-wrp{
+                    border-bottom: 1px solid #cfcfcf;
+                    .collape-active,.collape-active2,.collape-active3,.collape-active4
+                    ,.collape-active5,.collape-active6,.collape-active7,.collape-active8,.collape-active9{ 
+                        .Cplus{
+                            display: block!important; 
+                        } 
+                        .Cminus{
+                            display: none;
+                        }
+                    }
+                     .collap-head{
+                         padding: .6rem 0;
+                         cursor: pointer;
+                         transition: $transition;
+                         &:hover{
+                             transition: $transition;
+                             opacity: .88;
+                             transform: scale(.99);
+                         }
+                         .Cplus{
+                             display: none; 
+                         }
+                         h2{
+                             display: flex;
+                             span{
+                                padding: 0 .5rem 0 0;
+                                 i{
+                                     font-size: 1em;
+                                     color: #172f55;
+                                     transition: $transition;
+                                     &:hover{
+                                        transition: $transition;
+                                        color: #000;
+                                     }
+                                 }
+                             }
+                             text-transform: $cap;
+                             font-size: 1.2em;
+                             color: #172f55;
+                             word-spacing: 1px;
+                             letter-spacing: .5px;
+                         }
+                     }  
+                     .collapse-content{
+                         padding:.1rem 0;
+                         form{
+                             .Cl-cmn01{
+                                 padding: .5rem 0 0;
+                               p{
+                                @include flex;
+                                 justify-content: $between;
+                                 margin: 0 0 .9rem;
+                                 .Viw-Btn{
+                                     width: 100%;
+                                     text-align: right;
+                                 }
+                                 a{
+                                    font-size: 1em;
+                                    text-transform: $cap;
+                                    color: #172f55;
+                                    word-spacing: 1px;
+                                    font-weight: bold;
+                                    // padding: 0 .5rem;
+                                    transition: $transition;
+                                    text-decoration: none;
+                                    text-align: right;
+                                    &:hover{
+                                        transition: $transition;
+                                        color: #000;
+                                        text-decoration: underline;
+                                    } 
+                                 }
+                                 label{
+                                     display: flex;
+                                     align-items: center;
+                                     .checkbox{
+                                         width: 14px;
+                                         height: 14px;
+                                         border-radius: 5px;
+                                         cursor: pointer;
+                                     }
+                                     span{
+                                       font-size: 1em;
+                                       text-transform: $cap;
+                                       color: #172f55;
+                                       word-spacing: 1px;
+                                       font-weight: bold;
+                                       padding: 0 .5rem 0 .7rem;
+                                     }
+                                 }
+                                 strong{
+                                    font-size: 1em;
+                                    text-transform: $cap;
+                                    color: #172f55;
+                                    word-spacing: 1px;
+                                    font-weight: bold;
+                                    padding: 0 .5rem 0 .5rem;
+                                 }
+                               }
+                                 #Coll-inpt{
+                                     padding: .7rem .5rem;
+                                     text-transform: $cap;
+                                     font-size: 14px;
+                                     color: #999; 
+                                     outline: none;
+                                     width: 85%;
+                                     margin: 0 auto 1rem auto!important;
+                                     border-radius: 10px;
+                                     display: flex;
+                                     justify-content: center;
+                                     border: 1px solid #999;
+                                     transition: $transition;
+                                     &:hover{
+                                        transition: $transition;
+                                        border:1px solid #000;
+                                     }
+                                     &:focus{
+                                         transition: $transition;
+                                         box-shadow:0 0 3px 1px #172f5570
+                                     }
+                                 } 
+                             }
+                         }
+                     }
+                   }
+
+                // -----2nnnd--
+                .collapse-wrp2{
+                    .collapse-content{
+                        form{
+                            .Cl1{
+                                @include flex;
+                                justify-content: $between;
+                                label{
+                                    width: 49%;
+                                    select{ 
+                                     padding: .7rem .5rem;
+                                     text-transform: $cap;
+                                     font-size: 14px;
+                                     color: #999; 
+                                     outline: none;cursor: pointer;
+                                     width: 85%;
+                                     margin: 0 auto 1rem auto!important;
+                                     border-radius: 10px;
+                                     display: flex;
+                                     justify-content: center;
+                                     border: 1px solid #999;
+                                     transition: $transition;
+                                     option{
+                                         padding: .7rem 0;
+                                     }
+                                     &:hover{
+                                        transition: $transition;
+                                        border:1px solid #000;
+                                     }
+                                     &:focus{
+                                         transition: $transition;
+                                         box-shadow:0 0 3px 1px #172f5570
+                                     }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                // ----2nd--end---here
+               }
+           } 
+        }
+
+        // <!--More--btn-->
+         .Ld-btn{
+             width: 100%;
+             text-align: center;
+             padding: 1rem 0 0;
+             a{
+              padding: .9rem 2.5rem;
+              border-radius: 5px;
+              font-size: 1.3em;
+              color: $fff;
+              background: $site-color;
+              text-transform: $cap;
+              text-decoration: none;
+              transition: $transition;
+              &:hover{
+                transition: $transition;
+                opacity: .80;
+              }
+             }
+         }
+        // <!-end--here-More--btn-->
     }
 }
 // -----Car--list--Page-end--here---//

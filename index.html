@@ -34,12 +34,20 @@
                      </div>
                      <div class="nav-right-item nav-cmn">
                       <ul>
-                        <li><a href="#" class="hvr-underline-from-left">New <i class="fas fa-angle-down"></i></a></li>
-                        <li><a href="#" class="hvr-underline-from-left">Used <i class="fas fa-angle-down"></i></a></li>
-                        <li><a href="#" class="hvr-underline-from-left">sell <i class="fas fa-angle-down"></i></a></li>
-                        <li><a href="#" class="hvr-underline-from-left">auction <i class="fas fa-angle-down"></i></a></li>
-                        <li><a href="#" class="hvr-underline-from-left">blog <i class="fas fa-angle-down"></i></a></li>
-                        <li class="Login"><a href="#" class="hvr-bounce-to-top">Login / register</a></li>                    
+                        <li  class="nav-item1"><a href="#" class="hvr-underline-from-left">New <i class="fas fa-angle-down"></i></a>
+                            <div class="drop-down">
+                                <ul class="drop-down-items">
+                                   <li class="drop-down-item"><a href="carllist.html">Car list</a></li>
+                                   <li class="drop-down-item"><a href="#">Bike list</a></li>
+                                   <li class="drop-down-item"><a href="#">Item3</a></li>
+                                </ul>
+                           </div>
+                        </li>
+                        <li class="nav-item2"><a href="#" class="hvr-underline-from-left">Used <i class="fas fa-angle-down"></i></a></li>
+                        <li class="nav-item3"><a href="#" class="hvr-underline-from-left">sell <i class="fas fa-angle-down"></i></a></li>
+                        <li class="nav-item4"><a href="#" class="hvr-underline-from-left">auction <i class="fas fa-angle-down"></i></a></li>
+                        <li class="nav-item5"><a href="#" class="hvr-underline-from-left">blog <i class="fas fa-angle-down"></i></a></li>
+                        <li class="Login nav-item6"><a href="#" class="hvr-bounce-to-top">Login / register</a></li>                    
                       </ul>
                     </div>
                  </nav>
@@ -133,7 +141,10 @@
             </div> 
             <div class="ads-section">
                 <div class="addbar">
-                    <h2>Ads bar</h2>
+                    <!-- <h2>Ads bar</h2> -->
+                    <figure>
+                        <img src="image/ads.gif" alt="img">
+                    </figure>
                 </div>
             </div>
             </div>
@@ -612,12 +623,12 @@
                     Download Mobile App
                 </h2>
                 <ul>
-                    <li><a href="#">
+                    <li><a href="#" class="hvr-wobble-skew">
                        <figure>
                            <img src="image/appsotore1.png" alt="img">
                        </figure>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="#" class="hvr-wobble-skew">
                        <figure>
                            <img src="image/appstore2.png" alt="img">
                        </figure>
@@ -654,11 +665,18 @@
     <script src="js/vanilla-tilt.babel.min.js"></script> 
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <!-- <script src="js/stellarnav.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" media="all" href="css/stellarnav.min.css"> -->
     <!-- <script>
         new WOW().init();
     </script>
     <script>
         AOS.init();
       </script> -->
+      <!-- <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            jQuery('.stellarnav').stellarNav();
+        });
+    </script> -->
 </body>
 </html>
