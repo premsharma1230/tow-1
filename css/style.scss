@@ -530,7 +530,7 @@ main{
                     box-shadow: 0 0 6px 1px #999;
                     position: absolute;
                     right: -42px;
-                    top: 50%;
+                    top: 28%;//50%;
                     outline: none;
                     @include flex;
                     transition: $transition;
@@ -542,6 +542,12 @@ main{
                     }
                     span{
                         font-size:2.1em; 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;height: 100%; 
+                        border-radius: 50%;
+                        // border: 1px solid; 
                     }
                  }
                  .owl-prev{
@@ -981,6 +987,47 @@ main{
 }
 // -----Car--list--Page-end--here---//
 
+// -----botttunm-----top-----
+.BT-top {
+    right: 26px;
+    bottom: 38px;
+    position: fixed;
+    z-index: 3;
+    display: none;
+    a { 
+        @include flex;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%; 
+        box-shadow: 0px 0px 3px 2px #ffffff38;
+        background:$site-color; 
+        transition: $transition;
+        border: 1px solid #ffffff61;
+        text-decoration: $none;
+        i {
+            color: #fff;
+            font-size: 15px;
+            transition: $transition;
+        }
+        &:hover {
+            opacity: .77;
+            transition: $transition;
+            box-shadow: 0 0 3px 3px #fff;
+            .fa-angle-up {
+                font-size: 1.1em; 
+                transition: $transition;
+            }
+        }
+    }
+}
+// butttonnnn----top----end-----here-----
+
+
+
+
+
+
+
 // ------Bike--list---page---//
 .BikeList-Wrapper{
 width: 100%;
@@ -1121,3 +1168,7 @@ width: 100%;
     width: 100%;
 }
 // ----Used-commercial--list--Page-end--here---//
+
+@import 'media';
+
+

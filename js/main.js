@@ -183,6 +183,7 @@ $(".collap-head9").click(function(){
         }
       });
 })
+ 
 
 //---formmm---active--
 function openList(ListName) {
@@ -254,3 +255,22 @@ function topFunction() {
     
 
    
+//--bottom--to--top--- and------stickyyy---on----header---//
+// var mybutton = document.querySelector(".BT-top"); 
+// //var sticky = navbar.offsetTop;
+// window.onscroll = function() {
+//     BtTop()  
+// };
+// function BtTop() {
+//     if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+//         mybutton.style.display = "block"; 
+//     } else {
+//         mybutton.style.display = "none"; 
+//     }
+// } 
+
+// function bottomTop() {
+//     document.body.scrollTop = 0;
+//     document.documentElement.scrollTop = 0;
+// };
+// //end--here--//
