@@ -23,40 +23,15 @@ $(document).ready(function(){
 //   $(".checkbox").click(function(){
 //        $(".b1").fadeToggle("");
 //   })
-  // add & Remove class
-  // $(".blank-heart").click(function () {
-  //   if(!$(this).hasClass('heart-active'))
-  //   {    
-  //       $(".blank-heart.heart-active").removeClass("heart-active");
-  //        $(".blank-heart.heart-active").css("transition","all .4s ease-in-out");
-  //       $(this).addClass("heart-active");  
-  //       $(this).css("transition","all .4s ease-in-out");      
-  //   }
-  // });
-
  
-    // $(".heart-wrp").click(function (event) {
-    //      var a = event.currentTarget.previousElementSibling.innerText;
-
-    //     $("a").css("display", "none");
-
-    //     $("a").css("display", "block");
-    // }); 
+ 
+  
 //-----------heart------//
 
-  $(".blank-heart").click(function(){
-       $(".Fill-heart").css("display","block");
-       $(this).css("display","none" );
-      //  $(this).effect("bounce", "slow");
+  $(".Fill-heart .fa-heart").click(function( ){ 
+       $(this).toggleClass("active-heart");
   })
-
-
-
-  $(".Fill-heart").click(function(){
-    $(".blank-heart").css("display","none");
-    $(this).css("display","none");
-    // $(this).effect("bounce", "slow");
-})
+ 
 
 // ---Collapse-1---
 $(".collap-head1").click(function(){

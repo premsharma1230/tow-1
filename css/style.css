@@ -1060,18 +1060,12 @@ main footer .footer-content .ft-cmn .Social-wrp li a i {
   z-index: 21;
 }
 
-.CarList-Wrapper .Car-List-wrapper .Car-list-child-wrp .Car-list-Content .car-left .F-item-cmn .heart-wrp .blank-heart i {
-  color: red;
+.CarList-Wrapper .Car-List-wrapper .Car-list-child-wrp .Car-list-Content .car-left .F-item-cmn .heart-wrp .Fill-heart .fa-heart {
+  color: #c2c2c2;
   cursor: pointer;
-  font-size: 1.2em;
 }
 
-.CarList-Wrapper .Car-List-wrapper .Car-list-child-wrp .Car-list-Content .car-left .F-item-cmn .heart-wrp .Fill-heart {
-  display: none;
-}
-
-.CarList-Wrapper .Car-List-wrapper .Car-list-child-wrp .Car-list-Content .car-left .F-item-cmn .heart-wrp .Fill-heart i {
-  font-size: 1.2em;
+.CarList-Wrapper .Car-List-wrapper .Car-list-child-wrp .Car-list-Content .car-left .F-item-cmn .heart-wrp .Fill-heart .active-heart {
   color: red;
   cursor: pointer;
 }
@@ -1366,5 +1360,194 @@ main footer .footer-content .ft-cmn .Social-wrp li a i {
 
 .Commercial-Wrapper {
   width: 100%;
+}
+
+.Used_bike_Wrapper {
+  width: 100%;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .breadcmb ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .breadcmb ul li {
+  margin: .5rem .5rem 1.2rem 0;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .breadcmb ul li .fa-caret-right {
+  font-size: 15px;
+  color: #000;
+  padding: 0  0 0 .5rem;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .breadcmb ul li a {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  letter-spacing: .5px;
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .breadcmb ul li a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #172f55;
+  font-weight: bold;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .breadcmb ul li .Usedactive {
+  color: #172f55;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .breadcmb ul li .Usedactive:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: .77;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .Used-bike-right .right-top-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .Used-bike-right .right-top-heading h5 {
+  font-size: 1em;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  letter-spacing: .5px;
+  color: #172f55b3;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .Used-bike-right .right-top-heading h5:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #000;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .Used-bike-right .right-top-heading .location {
+  width: 100%;
+  padding: .9rem 0 .5rem;
+  position: relative;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .Used-bike-right .right-top-heading .location .LC-Map {
+  position: absolute;
+  right: 40px;
+  top: 24px;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .Used-bike-right .right-top-heading .location .LC-Map i {
+  font-size: 1.1em;
+  color: #172f55;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  -webkit-animation: Lmapanime 4s linear infinite;
+          animation: Lmapanime 4s linear infinite;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .Used-bike-right .right-top-heading .location .LC-Map i:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: rotateY(180deg) scale(1.1);
+          transform: rotateY(180deg) scale(1.1);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes Lmapanime {
+  0%, 100% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  50% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@keyframes Lmapanime {
+  0%, 100% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  50% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .Used-bike-right .right-top-heading .location input {
+  padding: .7rem .5rem;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #999;
+  outline: none;
+  width: 85%;
+  margin: 0 auto 1rem auto !important;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #999;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .Used-bike-right .right-top-heading .location input:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #000;
+}
+
+.Used_bike_Wrapper .Used-bike-wrp .Used-bike-right .right-top-heading .location input:focus {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0 0 3px 1px #172f5570;
+          box-shadow: 0 0 3px 1px #172f5570;
 }
 /*# sourceMappingURL=style.css.map */
