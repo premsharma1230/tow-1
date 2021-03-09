@@ -731,6 +731,7 @@ main .Features-Wrapper .Feaures-content .Feature-item-wrp .FItem-wrp .F-item-cmn
   width: 100%;
   height: 200px;
   overflow: hidden;
+  text-align: center;
 }
 
 main .Features-Wrapper .Feaures-content .Feature-item-wrp .FItem-wrp .F-item-cmn figure img {
@@ -1449,6 +1450,7 @@ main footer .footer-content .ft-cmn .Social-wrp li a i {
   color: #172f55b3;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .Used_bike_Wrapper .Used-bike-wrp .Used-bike-right .right-top-heading h5:hover {
@@ -1486,6 +1488,7 @@ main footer .footer-content .ft-cmn .Social-wrp li a i {
           transform: rotateY(180deg) scale(1.1);
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
+  color: #000;
 }
 
 @-webkit-keyframes Lmapanime {
@@ -1549,5 +1552,13 @@ main footer .footer-content .ft-cmn .Social-wrp li a i {
   transition: all 0.3s ease-in-out;
   -webkit-box-shadow: 0 0 3px 1px #172f5570;
           box-shadow: 0 0 3px 1px #172f5570;
+}
+
+.Used-car-Wrapper {
+  width: 100%;
+}
+
+.Used_commercial_Wrapper {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
