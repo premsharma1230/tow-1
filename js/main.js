@@ -34,6 +34,14 @@ $(document).ready(function(){
   //   }
   // });
 
+ 
+    // $(".heart-wrp").click(function (event) {
+    //      var a = event.currentTarget.previousElementSibling.innerText;
+
+    //     $("a").css("display", "none");
+
+    //     $("a").css("display", "block");
+    // }); 
 //-----------heart------//
 
   $(".blank-heart").click(function(){
@@ -45,7 +53,7 @@ $(document).ready(function(){
 
 
   $(".Fill-heart").click(function(){
-    $(".blank-heart").css("display","block");
+    $(".blank-heart").css("display","none");
     $(this).css("display","none");
     // $(this).effect("bounce", "slow");
 })
